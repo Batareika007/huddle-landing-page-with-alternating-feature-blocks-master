@@ -1,15 +1,8 @@
 /* 
-### Headings
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 600
-
 ### Body, Call-to-actions
 
 - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400, 700
-
-*/
+- Weights: 400, 700*/
 
 /* ===== global atributes ======== */
 
@@ -26,7 +19,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  Font-size: 18px
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 a {
@@ -43,19 +47,98 @@ a {
 /* ================     header      ================== */
 
 .header {
+  background-color: hsl(193, 100%, 96%);
   background-image: url(../images/bg-hero-desktop.svg);
+  padding: 50px 5%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+}
+
+.top_links {
+  grid-area: 1/1/2/3;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.top_logo > img {
+  width: 70%;
 }
 
 .top_link {
   background-color: #fff;
   color: hsl(192, 100%, 9%);
-  padding: 0.5% 3%;
+  padding: 12px 50px;
   border-radius: 25px;
   box-shadow: 0px 2px 2px 0px hsl(192, 100%, 9%, 0.1);
   font-weight: bolder;
 }
 
-/* ============= footer =========== */
+.top_content {
+  grid-area: 2/1/3/2;
+  margin-top: 50px;
+  width: 520px;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+.pink_link {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  padding: 15px 75px;
+  border-radius: 25px;
+  font-weight: bolder;
+  font-size: 0.7em;
+}
+
+.header_ilustrator > img {
+  max-width: 700px;
+}
+
+.header_ilustrator {
+  grid-area: 2/2/3/3;
+}
+
+/* =============   main section ============== */
+
+.cards {
+  margin: 100px 80px;
+}
+
+/* =============   cards   =============== */
+
+.card {
+  border-radius: 15px;
+  padding: 100px 40px;
+  box-shadow: 0px 0px 10px 5px hsl(192, 100%, 9%, 0.1);
+  margin-bottom: 50px;
+  display: flex;
+}
+
+/* ========== asside element ================ */
+
+aside {
+  margin: 0 auto;
+  width: 50%;
+  box-shadow: 0px 0px 10px 5px hsl(192, 100%, 9%, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+/* ============== footer links ================ */
+
+
+
+/* =============   footer   ================= */
 
 .footer {
   background-color: hsl(192, 100%, 9%);
