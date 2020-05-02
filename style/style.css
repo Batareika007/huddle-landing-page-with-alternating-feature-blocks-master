@@ -37,6 +37,12 @@ a {
   text-decoration: none;
 }
 
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 /* ============     main content   ================= */
 
 .container {
@@ -136,11 +142,43 @@ aside {
 
 /* ============== footer links ================ */
 
-
-
-/* =============   footer   ================= */
-
 .footer {
+  padding: 150px 72px;
   background-color: hsl(192, 100%, 9%);
   color: #fff;
+}
+
+.logo_bottom{
+  margin-bottom: 30px;
+  
+}
+
+.logo_bottom > img {
+  filter: brightness(0) invert(1);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  justify-items: center;
+}
+
+.block{
+  display: block;
+}
+
+li{
+  padding-bottom: 30px;
+}
+
+.bottom_icons{
+  margin-right: 20px;
+}
+
+.bootom_links{
+  color: #fff;
+}
+
+.bottom_copyright{
+  float: right;
 }
