@@ -21,10 +21,6 @@ The designs were created to the following widths:
 
 ## Typography
 
-### Body Copy
-
-- Font size: 18px
-
 ### Headings
 
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
