@@ -96,6 +96,7 @@ h1 {
   display: inline-block;
   margin-top: 30px;
   background-color: hsl(322, 100%, 66%);
+  box-shadow: 0px 2px 2px 0px hsl(192, 100%, 9%, 0.2);
   color: #fff;
   padding: 15px 75px;
   border-radius: 25px;
@@ -144,6 +145,12 @@ h1 {
   max-width: 500px;
   align-self: center;
 }
+
+.card_content>p{
+  color: hsl(208, 11%, 55%);
+}
+
+
 
 /* ========== asside element ================ */
 
@@ -214,4 +221,126 @@ a {
 
 .bottom_copyright {
   float: right;
+}
+
+
+@media (max-width: 800px) {
+
+  /* ============     main content   ================= */
+
+  .container {
+    max-width: 375px;
+  }
+
+  /* ================     header      ================== */
+
+  .header {
+    padding-top: 30px;
+    background-image: url(../images/bg-hero-mobile.svg);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .top_links {
+    margin-bottom: 0;
+  }
+
+  .top_logo>img {
+    width: 50%;
+  }
+
+  .top_link {
+    font-size: 0.9em;
+    padding: 5px 20px;
+  }
+
+
+  .top_content {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+
+  .top_content>p {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .pink_link {
+    padding: 10px 70px;
+    margin-bottom: 50px;
+  }
+
+  .header_ilustrator {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+
+  /* =============   main section ============== */
+
+.cards {
+  margin: 60px 15px;
+}
+
+/* =============   cards   =============== */
+
+.card {
+  border-radius: 15px;
+  padding: 40px 25px;
+  box-shadow: 0px 0px 10px 5px hsl(192, 100%, 9%, 0.1);
+  margin-bottom: 60px;
+  /* display: flex; */
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card:last-child {
+  margin-bottom: -100px;
+}
+
+.card_illustration {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card_content {
+  max-width: 500px;
+  align-self: center;
+}
+
+/* ========== asside element ================ */
+
+aside {
+  margin: 0 15px;
+  width: auto;
+  box-shadow: 0px 0px 10px 5px hsl(192, 100%, 9%, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+
+aside>h3{
+  font-size: 1em;
+}
+
+aside>.pink_link{
+  padding: 10px 50px;
+  margin: 0 0 40px 0;
+}
+
+
+
+
+
+
+
+
 }
