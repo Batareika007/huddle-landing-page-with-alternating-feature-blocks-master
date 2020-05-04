@@ -43,6 +43,10 @@ ul {
   padding: 0;
 }
 
+.disable {
+  display: none;
+}
+
 /* ============     main content   ================= */
 
 .container {
@@ -89,7 +93,7 @@ ul {
   width: 520px;
 }
 
-h1 {
+h2 {
   font-size: 2.2em;
 }
 
@@ -285,7 +289,7 @@ a {
     margin: 0;
   }
 
-  h1 {
+  h2 {
     font-size: 1.5em;
   }
 
